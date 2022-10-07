@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto';
+    width: 100vw;
+}
+
+.cabecalho {
+    background-color: #0098EC;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    text-shadow: 1px 2px 2px rgb(98, 98, 98);
+}
+
+.campo-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    height: 40px;
+    background-color: #38D7FC;
+    color: white;
+}
+
+input {
+    border: 0;
+    height: 2vh;
+    width: 25vw;
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 2px;
+}
+
+.botao-buscar {
+    border: 0;
+    height: 2vh;
+    width: 10vw;
+    font-size: x-small;
+    background-color: #2B00FF;
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 2px;
+    color: white;
+}
+
+main {
+    background-color: #35CDF0;
+}
+
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.container img {
+    max-width: 250px;
+    border-radius: 2px;
+    margin-bottom: 2vh;
+}
+
+.card {
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 3px grey;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+}
+
+footer {
+    background-color: #38D7FC;
+    color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content:center;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 0.08rem;
+}
+
+.botao-redes {
+    border: 0;
+    height: 20px;
+    width: 100px;
+    font-size: x-small;
+    text-decoration: none;
+    background-color: #2B00FF;
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 2px;
+    color: white;
+    margin: 0 1vw;
+}
+
+.botao-redes:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}

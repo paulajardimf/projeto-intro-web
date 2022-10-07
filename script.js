@@ -3,6 +3,7 @@ const expansao1 = {
   anoLancamento: 2015,
   adicionaNovoMundo: true,
   tema: ["Profissões", "Negócios"],
+  imagem: ""
 };
 
 const expansao2 = {
@@ -10,6 +11,7 @@ const expansao2 = {
   anoLancamento: 2015,
   adicionaNovoMundo: true,
   tema: ["Festas", "Eventos"],
+  imagem: ""
 };
 
 const expansao3 = {
@@ -17,6 +19,7 @@ const expansao3 = {
   anoLancamento: 2016,
   adicionaNovoMundo: true,
   tema: ["Vida Noturna", "Cidade"],
+  imagem: ""
 };
 
 const expansao4 = {
@@ -24,6 +27,7 @@ const expansao4 = {
   anoLancamento: 2017,
   adicionaNovoMundo: true,
   tema: ["Animais", "Veterinário"],
+  imagem: ""
 };
 
 const expansao5 = {
@@ -31,6 +35,7 @@ const expansao5 = {
   anoLancamento: 2018,
   adicionaNovoMundo: false,
   tema: ["Estações", "Clima"],
+  imagem: ""
 };
 
 const expansao6 = {
@@ -38,6 +43,7 @@ const expansao6 = {
   anoLancamento: 2018,
   adicionaNovoMundo: true,
   tema: ["Fama", "Celebridade"],
+  imagem: ""
 };
 
 const expansao7 = {
@@ -45,12 +51,14 @@ const expansao7 = {
   anoLancamento: 2019,
   adicionaNovoMundo: true,
   tema: ["Ilha", "Praia"],
+  imagem: ""
 };
 const expansao8 = {
   nomeExpansao: "The Sims 4: Vida Universitária",
   anoLancamento: 2019,
   adicionaNovoMundo: true,
   tema: ["Universidade", "Estudante"],
+  imagem: ""
 };
 
 const expansao9 = {
@@ -58,6 +66,7 @@ const expansao9 = {
   anoLancamento: 2020,
   adicionaNovoMundo: true,
   tema: ["Sustentabilidade", "Meio Ambiente"],
+  imagem: ""
 };
 
 const expansao10 = {
@@ -65,6 +74,7 @@ const expansao10 = {
   anoLancamento: 2020,
   adicionaNovoMundo: true,
   tema: ["Aventura", "Neve"],
+  imagem: ""
 };
 
 const expansao11 = {
@@ -72,6 +82,7 @@ const expansao11 = {
   anoLancamento: 2021,
   adicionaNovoMundo: true,
   tema: ["Fazenda", "Natureza"],
+  imagem: ""
 };
 
 const expansao12 = {
@@ -79,6 +90,7 @@ const expansao12 = {
   anoLancamento: 2022,
   adicionaNovoMundo: true,
   tema: ["Adolescente", "Escola"],
+  imagem: ""
 };
 
 const expansoes = [];
