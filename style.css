@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Roboto';
-    width: 100vw;
 }
 
 .cabecalho {
@@ -18,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 10vh;
     text-shadow: 1px 2px 2px rgb(98, 98, 98);
 }
 
@@ -27,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1vh;
-    height: 40px;
+    height: 5vh;
     background-color: #38D7FC;
     color: white;
 }
@@ -53,6 +52,8 @@ input {
 
 main {
     background-color: #35CDF0;
+    width: 100vw;
+    height: auto;
 }
 
 .container {
@@ -92,15 +93,16 @@ main {
 footer {
     background-color: #38D7FC;
     color: white;
-    height: 50px;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-weight: bold;
     font-size: small;
     letter-spacing: 0.08rem;
+    width: 100vw;
 }
 
 .botao-redes {
