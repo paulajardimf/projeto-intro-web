@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="script.js" defer></script>
     <title>Expansões The Sims 4</title>
+    <link rel="icon" href="./img/plumbob.ico">
   </head>
   <body>
     <header class="cabecalho">
@@ -17,12 +18,12 @@
       <div class="campo-busca">
         <label for="buscar"></label>
         <input type="text" name="buscar" id="campo-de-busca" class="input"/>
-        <button type="submit" class="botao-buscar" onclick="buscarExpansao()">BUSCAR</button>
+        <button type="submit" class="botao-buscar" id="botao-buscar" onclick="buscarExpansao(event)">BUSCAR</button>
       </div>
-      <div class="container" id="container">
+      <div class="container">
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <p>CRIADO POR PAULA JARDIM &#169; 2022</p>
       <div>
         <a href="https://www.linkedin.com/in/paulajardimf/" target="_blank" rel="noopener noreferrer">

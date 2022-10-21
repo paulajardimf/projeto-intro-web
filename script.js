@@ -90,7 +90,7 @@ const expansao12 = {
   anoLancamento: 2022,
   adicionaNovoMundo: true,
   tema: ["Adolescente", "Escola"],
-  imagem: "./img/Capa_The_Sims_4_Vida_no_Ensino_Medio.jpg"
+  imagem: "./img/Capa_The_Sims_4_Vida_no_Ensino_Medio.jpg" 
 };
 
 const expansoes = [];
@@ -98,108 +98,110 @@ const expansoes = [];
 if (expansao1.adicionaNovoMundo === true) {
   expansoes.push(expansao1);
 } else {
-  console.log(`O item ${expansao1.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao1.nomeExpansao} não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao2.adicionaNovoMundo) {
   expansoes.push(expansao2);
 } else {
-  console.log(`O item ${expansao2.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao2.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao3.adicionaNovoMundo) {
   expansoes.push(expansao3);
 } else {
-  console.log(`O item ${expansao3.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao3.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao4.adicionaNovoMundo) {
   expansoes.push(expansao4);
 } else {
-  console.log(`O item ${expansao4.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao4.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao5.adicionaNovoMundo) {
   expansoes.push(expansao5);
 } else {
-  console.log(`O item ${expansao5.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao5.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao6.adicionaNovoMundo) {
   expansoes.push(expansao6);
 } else {
-  console.log(`O item ${expansao6.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao6.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao7.adicionaNovoMundo) {
   expansoes.push(expansao7);
 } else {
-  console.log(`O item ${expansao7.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao7.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao8.adicionaNovoMundo) {
   expansoes.push(expansao8);
 } else {
-  console.log(`O item ${expansao8.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao8.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao9.adicionaNovoMundo) {
   expansoes.push(expansao9);
 } else {
-  console.log(`O item ${expansao9.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao9.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao10.adicionaNovoMundo) {
   expansoes.push(expansao10);
 } else {
-  console.log(`O item ${expansao10.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao10.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao11.adicionaNovoMundo) {
   expansoes.push(expansao11);
 } else {
-  console.log(`O item ${expansao11.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao11.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 if (expansao12.adicionaNovoMundo) {
   expansoes.push(expansao12);
 } else {
-  console.log(`O item ${expansao12.nomeExpansao} não foi adicionado ao array.`);
+  console.log(`O item ${expansao12.nomeExpansao}  não foi adicionado ao array, pois não adiciona um novo mundo no The Sims 4.`);
 }
 
 // laço para imprimir os temas das expansões em string
 for (const i in expansoes) {
   expansoes[i].tema = expansoes[i].tema.toString();
-  console.log(expansoes[i].tema);
-}
-
-// Função que retorna um objeto como string
-function objectToString(objeto) {
-  let relatorio = "";
-  for (const i in objeto) {
-    relatorio = `${relatorio}\n${[i]}: ${objeto[i]}`;
-  }
-  return relatorio;
 }
 
 // Array com todos os objetos
 const todasAsExpansoes = [expansao1, expansao2, expansao3, expansao4, expansao5, expansao6, expansao7, expansao8, expansao9, expansao10, expansao11, expansao12];
 
-// Função que busca expansão no array de expansões
-function filtraArrayDeExpansoes(arrayDeObj, string) {
-  for (let i in arrayDeObj) {
-    if (arrayDeObj[i].nomeExpansao === string) {
-      return arrayDeObj[i];
+// Função que retorna todos os objetos do array como string
+function objectToString(array) {
+  console.log("----------------------------------");
+  for(const objeto of array){
+    for (const prop in objeto) {
+      console.log(`${[prop]}: ${objeto[prop]}`);
     }
+    console.log("----------------------------------");
   }
-  return alert(`Sua busca ${string} não foi encontrada.`);
 }
-console.log(filtraArrayDeExpansoes(todasAsExpansoes, "The Sims 4: Junte-se à Galera"));
+objectToString(todasAsExpansoes);
 
+// Média
+let soma = 0;
+soma = (todasAsExpansoes[todasAsExpansoes.length - 1].anoLancamento) -(todasAsExpansoes[0].anoLancamento);
+let quant = (todasAsExpansoes.length);
+let media = (soma / quant) * 12;
 
-// DOM
+console.log(`É lançado uma nova expansão de The Sims 4 em média de ${media} meses( menos de 1 ano =) ).`);
 
-function buscarExpansaoPeloNome(array, name) {
+// ----------------DOM----------------
+function limpaInput() {
+  document.getElementById('campo-de-busca').value= '';
+}
+
+// Função para buscar no array de objetos
+function buscarArrayPeloNome(array, name) {
   const expansoes = array.filter((expansao)=> expansao.nomeExpansao.toLowerCase().includes(name.toLowerCase()));
 
   if(expansoes.length){
@@ -209,16 +211,38 @@ function buscarExpansaoPeloNome(array, name) {
   }
 }
 
-function buscarExpansao(){
-  const input = document.querySelector('.input').value;
-  if(!input){
+// Função que pega o valor do input e chama a função que busca os objetos
+function buscarExpansao(event){
+  event.preventDefault()
+
+  const input = document.getElementById('campo-de-busca').value;
+  const expansaoFiltro = buscarArrayPeloNome(todasAsExpansoes, input);
+  const footer = document.getElementById('footer');
+  const container = document.getElementsByClassName('container')[0];
+
+  if(input === ''){
     alert('Digite um nome de uma expansão válida!');
+    criarObjetosNoHtml(todasAsExpansoes);
+    footer.classList.remove('footer-fixado');
+    container.removeAttribute('id', 'container');
   } else {
-    const expansaoFiltro = buscarExpansaoPeloNome(todasAsExpansoes, input);
-    console.log(expansaoFiltro, 'a');
+    console.log(expansaoFiltro);
     criarObjetosNoHtml(expansaoFiltro);
+    footer.classList.add('footer-fixado');
+    container.setAttribute('id', 'container');
   }
+  console.log(expansaoFiltro.includes(input)); 
+  limpaInput()
 }
+
+// Habilitar o botão enter do teclado com o botão do campo de busca
+const input = document.getElementById('campo-de-busca');
+input.addEventListener("keyup", function(event){
+  if(event.key === 'Enter'){
+    event.preventDefault();
+    document.getElementById('botao-buscar').click()
+  }
+})
 
 // adicionar objetos no HTML
 function criarObjetosNoHtml (array) {
@@ -234,11 +258,9 @@ function criarObjetosNoHtml (array) {
         <li>Novo mundo: ${element.adicionaNovoMundo}</li>
         <li>Tema: ${element.tema}</li>
       </ul>
-    </section>
-    `
+    </section>`
     container.innerHTML += card;
   });
 }
 
 criarObjetosNoHtml(todasAsExpansoes)
-

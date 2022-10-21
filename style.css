@@ -50,10 +50,13 @@ input {
     color: white;
 }
 
+.botao-buscar:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+}
+
 main {
     background-color: #35CDF0;
-    width: 100vw;
-    height: auto;
 }
 
 .container {
@@ -71,6 +74,10 @@ main {
     max-width: 250px;
     border-radius: 2px;
     margin-bottom: 2vh;
+}
+
+#container {
+    height: 80vh;
 }
 
 .card {
@@ -121,6 +128,12 @@ footer {
 .botao-redes:hover{
     transform: scale(1.1);
     transition: all ease 500ms;
+}
+
+.footer-fixado {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 
